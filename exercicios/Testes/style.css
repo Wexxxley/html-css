@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(44, 44, 44);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: chartreuse;
+}
+
+div {
+    width: 100px;
+    height: 27px;
+    background-color: rgb(255, 255, 255);
+}
+
+div>p {
+    display: none;
+}
+
+div:hover>p {
+    display: block;
+}
+
+div>hr {
+    display: none;
+}
+
+div:hover>hr {
+    display: block;
+}
+
+.btn:hover {
+    background-color: chartreuse;
+    font-size: 1.1em;
+    color: white;
+}

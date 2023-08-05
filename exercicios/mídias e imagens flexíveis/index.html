@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com imagens</title>
+</head>
+
+<body>
+    <h1>Trabalhando com mídeas</h1>
+    <h2>Imagem flexível</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="">
+    </picture>
+    <h2>Áudio</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Finland - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/Finland - TrackTribe.ogg" type="audio/ogg">
+        <p>Seu navegador não consegue reproduzir o áudio</p>
+    </audio>
+    <h2>Vídeo hospedagem interna</h2>
+    <video width="560" controls poster="midia/capa.png" preload="none">
+        <source src="midia/158349 (1440P).mp4" type="video/mp4">
+        <source src="midia/158349 (1440P).webm" type="video/webm">
+        <p>Seu navegador não conseguiu reproduzir o vídeo</p>
+    </video>
+    <h2>Vídeo hospedagem externa</h2>
+    <h3>hospedagem no youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>
